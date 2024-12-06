@@ -1,0 +1,24 @@
+{
+  "name": "AdventOfCode",
+  "version": "0.0.1",
+  "description": "AdventOfCode",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TWare30/AdventOfCode"
+  },
+  "dependencies": {
+    "express": "~3.0.1",
+    "sequelize": "latest",
+    "q": "latest",
+    "tedious": "latest",
+    "angular": "latest",
+    "angular-ui-router": "~0.2.11",
+    "path": "latest",
+    "dat-gui": "latest"
+  }
+}
