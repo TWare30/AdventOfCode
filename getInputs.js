@@ -1,4 +1,4 @@
-import { readFileSync } from "fs";
+import { readFile, readFileSync } from "fs";
 
 export function day1Inputs() {
   let data = readFileSync("day1file.txt");
@@ -15,4 +15,23 @@ export function day1Inputs() {
     column2.push(entries[1]);
   }
   return [column1, column2];
+}
+
+export function day2inputs() {
+  let data = readFileSync("day2file.txt");
+  //let data = readFileSync("day2example.txt");
+  let text = data.toString();
+  let lines = text.split("\r\n");
+  let array = [];
+  let line = "";
+  for (line of lines) {
+    array.push(line.split(" "));
+  }
+  return array;
+}
+
+export function day3inputs() {
+  let data = readFileSync("day3file.txt");
+  let text = data.toString();
+  return text;
 }
