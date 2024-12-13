@@ -35,3 +35,17 @@ export function day3inputs() {
   let text = data.toString();
   return text;
 }
+
+export function day4inputs() {
+  let data = readFileSync("day4file.txt");
+  //let data = readFileSync("day4example.txt");
+  let text = data.toString();
+  return text;
+}
+
+export function day5inputs() {
+  let data = readFileSync("day5example.txt");
+  let rules = [];
+  let updates = [];
+  let lines = data.toString().split("\r\n");
+}
