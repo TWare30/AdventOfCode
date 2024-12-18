@@ -44,8 +44,25 @@ export function day4inputs() {
 }
 
 export function day5inputs() {
-  let data = readFileSync("day5example.txt");
+  //let data = readFileSync("day5example.txt");
+  let data = readFileSync("day5file.txt");
   let rules = [];
   let updates = [];
   let lines = data.toString().split("\r\n");
+  rules = lines.filter((str) => {
+    return str.includes("|");
+  });
+  updates = lines.filter((str) => {
+    return str.includes(",");
+  });
+  updates = updates.map((str) => {
+    return str.split(",");
+  });
+  return [rules, updates];
+}
+
+export function day6inputs() {
+  let data = readFileSync("day6example.txt").toString();
+  //let data = readFileSync("day6file.txt").toString();
+  return data;
 }
