@@ -49,3 +49,15 @@ export function day5inputs() {
   let updates = [];
   let lines = data.toString().split("\r\n");
 }
+
+export function day7inputs() {
+  let data = readFileSync("day7example.txt").toString();
+  let lines = data.split("\r\n");
+  let equations = [];
+  for (let i = 0; i < lines.length; i++) {
+    let equation = lines[i].split(": ");
+    equation[1] = equation[1].split(" ");
+    equations.push(equation);
+  }
+  return equations;
+}
