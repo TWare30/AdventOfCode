@@ -66,3 +66,16 @@ export function day6inputs() {
   //let data = readFileSync("day6file.txt").toString();
   return data;
 }
+
+export function day7inputs() {
+  let data = readFileSync("day7example.txt").toString();
+  //let data = readFileSync("day7file.txt").toString();
+  let lines = data.split("\r\n");
+  let equations = [];
+  for (let i = 0; i < lines.length; i++) {
+    let equation = lines[i].split(": ");
+    equation[1] = equation[1].split(" ");
+    equations.push(equation);
+  }
+  return equations;
+}
