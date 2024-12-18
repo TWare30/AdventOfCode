@@ -52,6 +52,7 @@ export function day5inputs() {
 
 export function day7inputs() {
   let data = readFileSync("day7example.txt").toString();
+  //let data = readFileSync("day7file.txt").toString();
   let lines = data.split("\r\n");
   let equations = [];
   for (let i = 0; i < lines.length; i++) {
