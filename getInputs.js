@@ -62,8 +62,8 @@ export function day5inputs() {
 }
 
 export function day6inputs() {
-  let data = readFileSync("day6example.txt").toString();
-  //let data = readFileSync("day6file.txt").toString();
+  //let data = readFileSync("day6example.txt").toString();
+  let data = readFileSync("day6file.txt").toString();
   return data;
 }
 

@@ -5,16 +5,19 @@ function main() {
   let sum = 0;
   let result = 0;
   let equation = 0;
+  let operands = [];
   //there are 2^n combinations
   for (let i = 0; i < equations.length; i++) {
     equation = equations[i];
     result = equation[0];
-    for (let space = 0; space < equation[1].length - 1; space++) {
-      console.log();
-    }
+    operands = equation[1];
+    let combinations = 2 ** (operands.length - 1);
+    let spaces = operands.length - 1;
+    console.log(result, operands, combinations);
+    for (let space = 0; space < combinations; space++) {}
   }
 
-  return equations;
+  return;
 }
 
 console.log(main());
