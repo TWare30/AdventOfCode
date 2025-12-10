@@ -14,7 +14,11 @@ function main() {
     let combinations = 2 ** (operands.length - 1);
     let spaces = operands.length - 1;
     console.log(result, operands, combinations);
-    for (let space = 0; space < combinations; space++) {}
+    while (operands.length > 0) {
+      let lastOp = operands.pop();
+      if ((result -= lastOp)) {
+      }
+    }
   }
 
   return;
