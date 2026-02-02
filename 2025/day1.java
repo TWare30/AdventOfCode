@@ -32,7 +32,13 @@ public class day1 {
             mag = mag * dir;
             System.out.println("start at " + dial + ", spin " + mag + " with count " + count);
             dial = dial + mag;
-            if (dial >= 100) {
+            if (dial % 100 == 0) {
+                increment = (int) Math.floor(dial/100.0);
+                System.out.println("click " + increment + " times");
+                dial = dial % 100;
+                count += increment;
+            }
+            else if (dial >= 100) {
                 increment = (int) Math.floor(dial/100.0);
                 System.out.println("click " + increment + " times");
                 dial = dial % 100;
